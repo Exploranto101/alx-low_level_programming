@@ -2,8 +2,9 @@
 /**
 * main - this is the main function, display output
 *
-* description - the starting point of the program
-* return - end the program
+* description - the starting point of the main function
+*
+* Return - end the program
 */
 
 
