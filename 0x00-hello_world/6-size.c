@@ -2,7 +2,8 @@
 
 /**
  * main - prints the size of various variables
- * return - return 0 is exited properly
+ *
+ * Return: return 0 is exited properly
  */
 int main(void)
 {

@@ -1,18 +1,15 @@
 #include <stdio.h>
-/**
-* main - this is the main function, display output
-*
-* description - the starting point of the program
-* return - end the program
-*/
 
+/**
+ * main - the main function
+ *
+ * description - display the standard output
+ *
+ * Return: return 0 as output
+ */
 
 int main(void)
-
 {
-
-		puts("\"Programming is like building a multilingual puzzle");
-
-		return (0);
-
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
