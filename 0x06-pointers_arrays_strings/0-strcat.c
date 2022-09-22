@@ -7,17 +7,41 @@
  * Return: exit the program
  */
 
-int main(void)
-{
-	char s1[98] = "Hello ";
-	char s2[] = "World!\n";
-	char *ptr;
+int _strlen(char *s)
 
-	printf("%s\n", s1);
-	printf("%s", s2);
-	ptr = _strcat(s1, s2);
-	printf("%s", s1);
-	printf("%s", s2);
-	printf("%s", ptr);
-	return (0);
+{
+
+	int len;
+
+	len = 0;
+
+	while (*(s + len) != '\0')
+
+		len++;
+
+	return (len);
+
+}
+char *_strcat(char *dest, char *src)
+
+{
+
+	int i, lendest, lensrc;
+
+
+
+	lendest = _strlen(dest);
+
+	lensrc = _strlen(src);
+
+	for (i = 0; i < lensrc; i++)
+
+	{
+
+		dest[lendest + i] = src[i];
+
+	}
+
+	return (dest);
+
 }
