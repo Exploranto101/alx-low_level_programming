@@ -1,47 +1,35 @@
-#include "main.h"
-#include <stdio.h>
+include "main.h"
 
 /**
- * main - this is main
+ * _strcat  - this is main
+ *
+ * @dest: copy to
+ * @src: copy from
  *
  * Return: exit the program
  */
 
-int _strlen(char *s)
-
-{
-
-	int len;
-
-	len = 0;
-
-	while (*(s + len) != '\0')
-
-		len++;
-
-	return (len);
-
-}
 char *_strcat(char *dest, char *src)
 
 {
 
-	int i, lendest, lensrc;
+	int i;
+	int j;
 
-
-
-	lendest = _strlen(dest);
-
-	lensrc = _strlen(src);
-
-	for (i = 0; i < lensrc; i++)
-
+	i = 0;
+	while (dest[i] != '\0')
 	{
-
-		dest[lendest + i] = src[i];
-
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
 
+	dest[i] = '\0';
 	return (dest);
 
 }
